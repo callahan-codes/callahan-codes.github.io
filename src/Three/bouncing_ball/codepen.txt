@@ -1,6 +1,0 @@
-I created a pen ( https://codepen.io/Bryce-Callahan/pen/jOdoevo ),
-but I can't find a place to upload the HDR image that creates the 
-3D environment, so unless you just want a basic cube example, the
-link is useless. Just grab the code here😊
-
-HDR: https://hdri-haven.com/hdri/covered-square
