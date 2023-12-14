@@ -7,7 +7,7 @@ document.getElementById('js').addEventListener('click', function() {
 }, false);
 
 document.getElementById('three').addEventListener('click', function() {
-    location.href = '../src/Three/'
+    location.href = '../src/Three/index.html'
 }, false);
 
 document.getElementById('pen').addEventListener('click', function() {

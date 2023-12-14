@@ -42,6 +42,7 @@ main
     display: grid;
     grid-template-columns: 100%;
     max-width: 500px;
+    text-align: center;
 }
 
 main div 
