@@ -141,6 +141,35 @@ main
     {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .preview {
+        height: 225px;
+        width: 225px;
+    }
+
+    .info {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .info a {
+        bottom: 0;
+        top: 90px;
+        padding: 5px 10px;
+    }
+
+    .preview:hover {
+        height: 225px;
+        width: 225px;
+    }
+
+    .preview:hover .info {
+        display: block;
+
+    }
+
 }
 
 
