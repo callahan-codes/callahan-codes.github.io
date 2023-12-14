@@ -1,5 +1,5 @@
 document.getElementById('css').addEventListener('click', function() {
-    location.href = '#'
+    location.href = '../src/CSS/'
 }, false);
 
 document.getElementById('js').addEventListener('click', function() {
