@@ -12,7 +12,7 @@ html, body
 
 #home-btn 
 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 60px;
@@ -116,7 +116,8 @@ main
     text-align: center;
 }
 
-.info a:hover {
+.info a:hover 
+{
     background-color: blue;
     color: white;
 }
@@ -132,6 +133,14 @@ main
     display: grid;
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 600px) 
+{
+    main
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
