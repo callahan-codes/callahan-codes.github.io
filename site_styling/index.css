@@ -68,9 +68,9 @@ main div:hover
 }
 
 .codepen {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #c7c7c7, #3c59e7, #23a6d5, #3c59e7, #c7c7c7);
 	background-size: 250% 250%;
-	animation: buttonBG 10s ease infinite;
+	animation: buttonBG 4s ease infinite;
 }
 
 @keyframes buttonBG {
