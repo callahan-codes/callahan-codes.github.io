@@ -1,0 +1,122 @@
+/* BRYCE CALLAHAN */
+/* 12-13-2023 */
+
+
+/* normal config */
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body {
+    transition: 0.5s ease;
+}
+
+
+/* dark mode config */
+body.dark {
+    color: white;
+}
+
+body.dark main
+{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+body.dark .light-head 
+{
+   color: rgb(42, 42, 42);; 
+}
+
+/* container */
+main 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* span text */
+.light-head 
+{
+    color: black;
+}
+
+.dark-head 
+{
+    color: rgb(230, 230, 230);
+}
+
+/* button */
+.btn 
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.btn input 
+{ 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.swipe 
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.swipe:before 
+{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .swipe  
+{
+    background-color: rgb(4, 255, 4);
+}
+
+input:checked + .swipe:before 
+{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.swipe.round 
+{
+    border-radius: 34px;
+}
+
+.swipe.round:before 
+{
+    border-radius: 50%;
+}
