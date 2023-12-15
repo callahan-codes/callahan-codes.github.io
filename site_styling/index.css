@@ -6,8 +6,8 @@ html, body
 {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Earth Orbiter Academy', sans-serif;
 }
 
@@ -22,7 +22,7 @@ header
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: url(https://removal.ai/wp-content/uploads/2021/09/black-background-08-vecteezy.png);
+    background-image: url(https://images4.alphacoders.com/132/1329894.png);
     background-size:  100% 100%;
 }
 
@@ -50,7 +50,7 @@ main div
     height: 80%;
     width: 80%;
     margin: auto;
-    border: 3px solid white;
+    border: 3px solid rgb(220, 220, 220);
     border-radius: 10px;
     display: flex;
     justify-content: center;
