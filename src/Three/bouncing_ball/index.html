@@ -1,6 +1,3 @@
-<!-- BRYCE CALLAHAN -->
-<!-- 12-13-2023 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../../../site_styling/loader.css"> <!-- ignore | delete -->
-    <title>Light / Dark Mode</title>
+    <title>Bouncing Ball</title>
 </head>
-<body> 
+<body>
 
     <!-- ignore | loader for github site | delete -->
         <div class="loader">
@@ -21,24 +18,23 @@
         
         </div>
     <!-- ignore | loader for github site -->
-
-    <main>
-
-        <div>
-
-            <h1><span class="light-head">LIGHT</span> / <span class="dark-head">DARK</span></h1>
-
-            <label class="btn">
-                <input type="checkbox" id="darkbutton">
-                <span class="swipe round" id="mode-slider"></span>
-            </label><br>
-
-        </div>
-
-    </main>
-
-    <script src="script.js"></script>
-    <script src="../../../site_script/loader.js"></script> <!-- ignore | delete -->
+    
+    <span class="scene">
+        <canvas></canvas>
+    </span>
 
 </body>
+
+<!-- Script Calls -->
+<script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.module.js"
+        }
+    }
+</script>
+<script type="module" src="scene.js"></script>
+<script src="../../../site_script/loader.js"></script> <!-- ignore | delete -->
+
 </html>

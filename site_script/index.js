@@ -1,5 +1,5 @@
 document.getElementById('css').addEventListener('click', function() {
-    location.href = '../src/CSS/index.html'
+    location.href = 'src/CSS/index.html'
 }, false);
 
 document.getElementById('js').addEventListener('click', function() {
@@ -7,7 +7,7 @@ document.getElementById('js').addEventListener('click', function() {
 }, false);
 
 document.getElementById('three').addEventListener('click', function() {
-    location.href = '../src/Three/index.html'
+    location.href = 'src/Three/index.html'
 }, false);
 
 document.getElementById('pen').addEventListener('click', function() {
