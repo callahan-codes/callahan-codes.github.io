@@ -1,7 +1,7 @@
 # callahan-codes.github.io
 
 <ul>
-    <li>All projects can be found in the <strong><a href="https://github.com/callahan-codes/callahan-codes.github.io/tree/main/src">src</a></strong</li>
+    <li>All projects can be found in the <strong><a href="https://github.com/callahan-codes/callahan-codes.github.io/tree/main/src">src</a></strong> folder</li>
     <li>All projects are free to use / copy</li>
     <li>All projects were hand-coded by me!</li>
 </ul>
