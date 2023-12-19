@@ -11,7 +11,7 @@
 
 <strong>Coming soon:</strong>
 <ul>
-    <li>>Blog PHP System
+    <li>Blog PHP System
         <ul>
             <li>Under development | <a href="https://github.com/callahan-codes/callahan-codes.github.io/tree/main/src/Templates/Blog">Blog</a>
         </ul>
