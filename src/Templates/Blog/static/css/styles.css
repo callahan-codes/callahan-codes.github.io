@@ -1,0 +1,131 @@
+html
+{
+    height: 100%;
+}
+
+body 
+{
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 6rem;
+}
+
+/* CONTAINER */
+.container 
+{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* NAV BAR */
+nav 
+{
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #3E606F;
+    border-radius: 0px 0px 6px 6px;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li 
+{
+    float: left;
+}
+
+nav ul li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 28px;
+    text-decoration: none;
+}
+
+nav ul li a:hover 
+{
+    color: #B9E6F2;
+    background-color: #334F5C;
+}
+
+nav .logo_div 
+{
+    float: left; 
+    padding-top: 5px;
+    padding-left: 40px;
+}
+
+nav .logo_div img 
+{
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+}
+
+/* BANNER */
+.banner 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    background-image: url(../images/Banner_bg.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    margin: 10px auto;
+}
+
+.banner_con
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.welcome_msg 
+{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+/* INTRODUCTION */
+.introduction p 
+{
+    font-size: 22px;
+}
+
+/* FOOTER */
+footer 
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 6px 6px 0px 0px;
+    height: 100px;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #3E606F;
+    text-align: center;
+    padding-top: 8px;
+}
+
+footer div img {
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 580px) 
+{
+    /* banner query for mobile coming next */
+}

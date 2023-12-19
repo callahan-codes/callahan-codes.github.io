@@ -8,15 +8,17 @@
 
 <hr />
 
-<strong>Coming Soon:</strong>
+<strong>Coming soon:</strong>
 <ul>
-    <li>Better file structure</li>
+    <li>JavaScript</li>
     <ul>
-        <li>Switching to PHP soon for custom made bootstrap by yours truly</li>
-        <li>The reason being is because after implementing the loader, I realize it can be done much easier with PHP. Plus, it'll clean up the code.</li>
-        <li>This change can be expected to be done by <u>1/1/2024</u></li>
+        <li>Event Listener examples</li>
+        <li>Alerts for Form</li>
     </ul>
-    <li>Event Listener examples for <em>JavaScript</em> tab</li>
+    <li>Three JS</li>
+    <ul>
+        <li>Ocean and Skybox</li>
+        <li>Instancing</li>
 </ul>
 
 <hr />
