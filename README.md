@@ -8,20 +8,8 @@
 
 <hr />
 
-<<<<<<< HEAD
+
 <strong>Coming soon:</strong>
-<ul>
-    <li>JavaScript</li>
-    <ul>
-        <li>Event Listener examples</li>
-        <li>Alerts for Form</li>
-    </ul>
-    <li>Three JS</li>
-    <ul>
-        <li>Ocean and Skybox</li>
-        <li>Instancing</li>
-=======
-<strong>Coming by 1/1/2024:</strong>
 <ul>
     <li><em>Templates Folder</em>
         <ul>

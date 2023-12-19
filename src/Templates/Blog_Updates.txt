@@ -1,4 +1,0 @@
-Updates to come:
-
-    - Continue as guest / Admin signin form
-    - Post system
