@@ -8,6 +8,7 @@
 
 <hr />
 
+<<<<<<< HEAD
 <strong>Coming soon:</strong>
 <ul>
     <li>JavaScript</li>
@@ -19,6 +20,23 @@
     <ul>
         <li>Ocean and Skybox</li>
         <li>Instancing</li>
+=======
+<strong>Coming by 1/1/2024:</strong>
+<ul>
+    <li><em>Templates Folder</em>
+        <ul>
+            <li>Blog PHP System
+                <ul>
+                    <li>Currently Under Development</li>
+                    <li>Admin / Normal Access</li>
+                    <li>Post System</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Event Listener examples for <em>JavaScript</em> tab</li>
+    <li>Alert Form system for <em>JavaScript</em> tab</li>
+>>>>>>> 659db8464befed46736943de1baa00d9409b4946
 </ul>
 
 <hr />
