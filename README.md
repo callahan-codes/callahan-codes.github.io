@@ -22,7 +22,7 @@
         </ul>
     </li>
     <li>Event Listener examples for <em>JavaScript</em> tab</li>
-    <li>Alert Form system for <em>JavaSCript</em> tab</li>
+    <li>Alert Form system for <em>JavaScript</em> tab</li>
 </ul>
 
 <hr />
