@@ -10,13 +10,19 @@
 
 <strong>Coming by 1/1/2024:</strong>
 <ul>
-    <li>Templates Folder
+    <li><em>Templates Folder</em>
         <ul>
-            <li>Blog
-            <ul><li>Currently Under Development</li></ul></li>
+            <li>Blog PHP System
+                <ul>
+                    <li>Currently Under Development</li>
+                    <li>Admin / Normal Access</li>
+                    <li>Post System</li>
+                </ul>
+            </li>
         </ul>
     </li>
     <li>Event Listener examples for <em>JavaScript</em> tab</li>
+    <li>Alert Form system for <em>JavaSCript</em> tab</li>
 </ul>
 
 <hr />
