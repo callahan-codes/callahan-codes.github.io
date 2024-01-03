@@ -11,11 +11,7 @@
 
 <strong>Coming soon:</strong>
 <ul>
-    <li>Blog PHP System
-        <ul>
-            <li>Under development | <a href="https://github.com/callahan-codes/callahan-codes.github.io/tree/main/src/Templates/Blog">Blog</a>
-        </ul>
-    </li>
+    <li>Earth & Moon Models for <em>Three</em> tab</li>
     <li>Event Listener examples for <em>JavaScript</em> tab</li>
     <li>Alert Form system for <em>JavaScript</em> tab</li>
 </ul>
