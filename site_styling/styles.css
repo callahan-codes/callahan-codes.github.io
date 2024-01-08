@@ -165,6 +165,23 @@ a
 }
 
 
+/* JAVASCRIPT */
+/* #preview-three-# {
+    background-image: url(../site_images/);
+    background-size: cover;
+} */
+#preview-js-1 
+{
+    background-image: url(../site_images/js-preview-1.png);
+    background-size: cover;
+}
+
+#preview-js-2
+{
+    background-image: url(../site_images/js-preview-2.png);
+    background-size: cover;
+}
+
 
 /* THREE */
 /* #preview-three-# {

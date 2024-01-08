@@ -22,9 +22,15 @@ document.getElementById('over').addEventListener('mouseover', function(){
 });
 
 // key down
-document.getElementById('anykey').addEventListener('keydown', function(){
+document.body.onkeydown = function(){
     alert_box.style.display = "flex";
     msg.innerHTML = "<h5>This is a <u>keydown</u> function.</h5><br>This event is triggered when the user presses a key."
-});
+}
+
+document.addEventListener('keydown', (e) => {
+    if(e.key == 'x'){
+        msg.innerHTML = "<h5>This is a <u>specified key</u> down function.</h5><br>This event is triggered when the user presses a specified key."
+    }
+})
 
 // more to come

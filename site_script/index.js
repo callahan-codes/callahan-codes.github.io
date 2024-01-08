@@ -3,7 +3,7 @@ document.getElementById('css').addEventListener('click', function() {
 }, false);
 
 document.getElementById('js').addEventListener('click', function() {
-    location.href = '#coming-soon'
+    location.href = 'src/JavaScript/index.html'
 }, false);
 
 document.getElementById('three').addEventListener('click', function() {
