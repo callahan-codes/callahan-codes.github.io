@@ -1,6 +1,6 @@
 # callahan-codes.github.io
 
-You can view the site <a href="callahan-codes.github.io">HERE</a>
+You can view the site <a href="https://callahan-codes.github.io">HERE</a>
 
 <ul>
     <li>All projects can be found in the <strong><a href="https://github.com/callahan-codes/callahan-codes.github.io/tree/main/src">src</a></strong> folder</li>
