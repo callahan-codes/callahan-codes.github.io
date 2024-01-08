@@ -82,15 +82,16 @@ var Interval ;
 buttonStart.onclick = function() {
     
     clearInterval(Interval);
-    Interval = setInterval(startTimer, 10);
-}
+        Interval = setInterval(startTimer, 10);
+    }
 
     buttonStop.onclick = function() {
         clearInterval(Interval);
-}
+    }
 
 buttonReset.onclick = function() {
     clearInterval(Interval);
+    timer_hours = "00";
     timer_minutes = "00";
     timer_tens = "00";
     timer_seconds = "00";
@@ -127,10 +128,6 @@ function startTimer () {
         appendSeconds.innerHTML = "0" + timer_seconds;
         timer_minutes++;
         appendMinutes.innerHTML = "0" +timer_minutes;
-    }
-
-    if (timer_minutes <= 9) {
-        appendMinutes.innerHTML = "0" + timer_minutes;
     }
 
     if (timer_minutes >= 10 && timer_minutes < 60) {
