@@ -1,7 +1,5 @@
 # callahan-codes.github.io
 
-test
-
 You can view the site <a href="https://callahan-codes.github.io">HERE</a>
 
 <ul>
