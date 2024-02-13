@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/bai-jamjuree-2');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 html, body {
     margin: 0;
@@ -11,8 +12,8 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #canvas {
@@ -22,11 +23,28 @@ html, body {
     height: 100%;
 }
 
+.icon1, .icon2 {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    font-size: 60px;
+    z-index: 100;
+}
+
+.icon2 {
+    display: none;
+}
+
+.icon1:hover, .icon2:hover {
+    cursor: pointer;
+    color: white;
+}
+
 main {
     position: absolute;
     top: 100%;
     width: 100%;
-    height: 500px;
+    height: auto;
     background-color: black;
     z-index: 50;
 }
@@ -38,6 +56,7 @@ main {
     max-width: 1400px;
     margin: auto;
     font-size: 22px;
+    color: white;
 }
 
 .grid {
@@ -97,6 +116,8 @@ img {
     margin: 6px;
     font-size: 24;
     font-weight: bold;
+    height:40px;
+    line-height: 40px;
 }
 
 
@@ -109,6 +130,103 @@ img {
     border-radius: 10px;
 }
 
+.pos {
+    height: 300px;
+    width: 100%;
+    background-color: #CD7F32;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    text-align: center;
+}
+
+h2 {
+    color: #CD7F32;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    height: 125px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #CD7F32;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fcon {
+    width: 200px;
+    margin: auto;
+}
+
+.app-btn {
+    width: 140px;
+    height: 30px;
+    background-color: black;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 8px;
+    line-height: 30px;
+    color: white;
+}
+
+.app-btn:hover {
+    cursor: pointer;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 100;
+}
+  
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+  
+.spinner-container {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+  
+.spinner {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid black;
+    border-top-color: #CD7F32;
+    border-bottom-color: #CD7F32;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -119,4 +237,10 @@ img {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@media screen and (max-width: 1250px) {
+    .two-column, .three-column {
+        grid-template-columns: 100%;
+    }
 }

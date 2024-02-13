@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Bakery</title>
 </head>
+
+<div class="loader">
+
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+
+</div>
 
 <!-- Body -->
 <body>
@@ -20,6 +29,7 @@
     <!-- Main Content -->
     <main>
         <div class="container">
+            <h2>Conversions</h2>
             <div class="grid two-column">
                 <div class="grid-item">
                     <div class="units">
@@ -33,20 +43,52 @@
                     </div>
                 </div>
                 <div class="grid-item">
-                    <p>
-                        We convert the following units amongst each other with precision and accuracy. Our app was designed as an easy-to-use conversion tool for customers cooking!
+                    <p style="margin-top: -10px;">
+                        We convert the following units amongst each other with precision and accuracy. Our app was designed with an easy-to-use conversion tool for customers cooking!
                     </p>
                     <div class="underline"></div>
                 </div>
             </div>
         </div>
+
+        <div class="container" style="margin-top: 100px;">
+            <h2>Point of Sale</h2>
+            <div class="grid three-column">
+                <div class="pos">Each and every cake only $28.63</div>
+                <div class="pos">We Deliver for a small fee of $4.99</div>
+                <div class="pos">We sell singular slices for $5.00</div>
+            </div>
+            <p>
+                In our app, you can input your desired amount of cake, option for delivery and tip, and will be provided with a full reciept and payment option. And fret not, if you have any doubts or are unsatisfied, you can cancel your order or request a refund!
+            </p>
+        </div> 
+
+        <div class="container" style="margin-top: 100px;">
+            <h2>App Website & Documentation</h2>
+            <p>
+                I built this website as an extra menu option for our app. I mainly focused on the <span>THREE.JS</span> scene, which is why the body contents aren't too extravegant or properly/efficiently written. The whole site is fully responsive, but the 3D scene wasn't necessarily built with that in mind, since the app will only be ran on laptop/desktops. Still, I hope you enjoy our little 3D floaty-cake vibing to some lofi :D
+            </p>
+            <p>
+                Our app comes with full feature documentation along with the option to view in-app or in your browser. You can also view default and extra features within the documentation, and each option for each app menu item.
+            </p>
+        </div> 
+
+        <!-- create link to github repo and download file function -->
+        <footer>
+            <div class="fcon">
+                <div class="app-btn" id="app-btn-download">
+                    Download
+                </div>
+                <div class="app-btn" id="app-btn-github">
+                    Github Repo
+                </div>
+            </div>
+        </footer>
     </main>
 
-    <audio controls autoplay loop>
-        <source src="audio/lofi-study-112191.mp3" type="audio/ogg">
-        <source src="audio/lofi-study-112191.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <i class="bi bi-volume-mute-fill icon1" onclick="playAudio()" id="volumeOff"></i>
+    <i class="bi bi-volume-up-fill icon2" onclick="stopAudio()" id="volumeOn"></i>
+    <audio id="audio" src="audio/lofi-study-112191.mp3"></audio>
 
 </body>
 
@@ -60,7 +102,8 @@
 }
 </script>
 <script type="module" src="script/scene.js"></script>
-<script src="script/conversion.js"></script>
-<script src="script/select.js"></script>
+<script src="script/audio.js"></script>
+<script src="script/loader.js"></script>
+<script src="script/buttons.js"></script>
 
 </html>
