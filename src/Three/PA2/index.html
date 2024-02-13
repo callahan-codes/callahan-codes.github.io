@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bakery</title>
+</head>
+
+<!-- Body -->
+<body>
+
+    <!-- 3D scene -->
+    <span class="scene"><canvas id="canvas"></canvas></span>
+    <div class="scroll-message">
+        <p>Crafting Sweet Memories One Treat at a Time!</p>
+        <div class="scroll-animation"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="grid two-column">
+                <div class="grid-item">
+                    <div class="units">
+                        <div class="unit">Gallons</div>
+                        <div class="unit">Quarts</div>
+                        <div class="unit">Pints</div>
+                        <div class="unit">Cups</div>
+                        <div class="unit">Ounces</div>
+                        <div class="unit">Tablespoons</div>
+                        <div class="unit">Teaspoons</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <p>
+                        We convert the following units amongst each other with precision and accuracy. Our app was designed as an easy-to-use conversion tool for customers cooking!
+                    </p>
+                    <div class="underline"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <audio controls autoplay loop>
+        <source src="audio/lofi-study-112191.mp3" type="audio/ogg">
+        <source src="audio/lofi-study-112191.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+
+<!-- Script -->
+<script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.module.js"
+    }
+}
+</script>
+<script type="module" src="script/scene.js"></script>
+<script src="script/conversion.js"></script>
+<script src="script/select.js"></script>
+
+</html>
