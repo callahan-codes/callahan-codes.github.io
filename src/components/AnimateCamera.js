@@ -7,11 +7,13 @@ export default function AnimateCamera({ animate }) {
   const { camera } = useThree();
   const controlsRef = useRef();
 
-  // original position & target coords
-  const fromPos = { x: -10, y: 3, z: 0 };
-  const fromTarget = { x: 0, y: 4, z: 0 };
-  const toPos = { x: -5, y: 0, z: 0 };
-  const toTarget = { x: 10, y: 0, z: 10 };
+  // original position & original target coords
+  const fromPos = { x: -30, y: 5, z: 0 };
+  const fromTarget = { x: 0, y: 5, z: 0 };
+
+  // destined postion & destined target coords
+  const toPos = { x: -1, y: 5, z: 0 };
+  const toTarget = { x: 0, y: 5, z: 0 };
 
   useEffect(() => {
 
@@ -45,11 +47,12 @@ export default function AnimateCamera({ animate }) {
 
   return (
     <OrbitControls
-      ref={controlsRef}
-      enablePan={false}
-      enableZoom={false}
-      minPolarAngle={Math.PI / 2}
-      maxPolarAngle={Math.PI / 2}
+        ref={controlsRef}
+        enablePan={true}
+        enableZoom={true}
+        maxDistance={25}
+        // minPolarAngle={0}                 // Allow camera to go from the top
+        // maxPolarAngle={Math.PI / 2}      // Stop at horizontal axis
     />
   );
 }
