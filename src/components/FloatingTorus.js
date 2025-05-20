@@ -57,8 +57,8 @@ function AnimatedTorus({ initialOffset }) {
         <torusGeometry args={[0.5, 0.1, 16, 100]} />
         <meshStandardMaterial
             ref={materialRef}
-            color='orange'
-            emissive='orange'             
+            color='#90EE90'
+            emissive='#90EE90'             
             emissiveIntensity={2}        
             toneMapped={false}            
             transparent
