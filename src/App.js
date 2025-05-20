@@ -1,12 +1,12 @@
-// App.js
 import './App.css';
 import { Canvas } from '@react-three/fiber';
 import { useState } from 'react';
-import CubeGrid from './components/CubeGrid'; // Import CubeGrid component
-import Model from './components/Model'; // Your existing Model component
-import AnimateCamera from './components/AnimateCamera'; // Assuming you have the AnimateCamera component
+import CubeGrid from './components/CubeGrid'; 
+import Model from './components/Model'; 
+import AnimateCamera from './components/AnimateCamera';
 import AnimatedTorusGroup from './components/FloatingTorus';
 import IFrame from './components/IFrame';
+import FogSetup from './components/Fog';
 import SceneBloom from './components/Bloom';
 
 function App() {
@@ -14,10 +14,15 @@ function App() {
 
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
-      <Canvas camera={{ position: [-10, 5, 0] }}>
+    <Canvas camera={{ position: [-10, 5, 0] }}>
 
-        <ambientLight />
-
+      <FogSetup/>
+      <directionalLight
+        position={[-5, 5, 5]}
+        intensity={3}
+        castShadow
+      />
+      
         <CubeGrid gridSize={75} cubeSize={1} />
         <Model scale={1} onHoverChange={setAnimateCamera} />
         <IFrame/>

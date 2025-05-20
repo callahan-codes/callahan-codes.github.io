@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 
 const TORUS_COUNT = 5
@@ -17,20 +17,20 @@ function AnimatedTorus({ initialOffset }) {
   useFrame(() => {
     let newY = y - SPEED
 
-    // Fade out
+    // fade out
     if (newY <= END_Y + FADE_DISTANCE && newY > END_Y) {
       const t = (newY - END_Y) / FADE_DISTANCE
       materialRef.current.opacity = t
     }
 
-    // Reset
+    // reset
     if (newY <= END_Y && !isResetting) {
       setIsResetting(true)
       newY = START_Y
       materialRef.current.opacity = 0
     }
 
-    // Fade in
+    // fade in
     if (isResetting && materialRef.current.opacity < 1) {
       materialRef.current.opacity += 0.05
       if (materialRef.current.opacity >= 1) {
@@ -39,14 +39,12 @@ function AnimatedTorus({ initialOffset }) {
       }
     }
 
-    // === Smooth Scaling ===
-    // Map y from [4, 0] to scale from [1.2, 0.4]
     const minScale = 0.4
     const maxScale = 1.2
-    const scaleT = (newY - END_Y) / (START_Y - END_Y) // normalized 0–1
+    const scaleT = (newY - END_Y) / (START_Y - END_Y)
     const scale = minScale + scaleT * (maxScale - minScale)
 
-    // Apply transforms
+    // scale transforms
     meshRef.current.position.y = newY
     meshRef.current.scale.set(scale, scale, scale)
     meshRef.current.rotation.x = Math.PI / 2
