@@ -25,7 +25,7 @@ export default function IFrame() {
 
         <div style={{ display: visible ? 'block' : 'none' }}>
           <iframe
-            src="https://callahan-codes.github.io/os/"
+            src="https://callahan-codes.github.io/OS/"
             width="835"
             height="470"
             style={{
