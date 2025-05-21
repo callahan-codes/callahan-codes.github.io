@@ -16,7 +16,7 @@ export default function IFrame() {
 
       <Html
         transform
-        scale={0.15}
+        scale={0.06}
         position={[0, 0, 0.01]}
         rotation={[0, Math.PI, 0]}
         occlude={[occluderRef]}
@@ -26,8 +26,8 @@ export default function IFrame() {
         <div style={{ display: visible ? 'block' : 'none' }}>
           <iframe
             src="https://callahan-codes.github.io/OS/"
-            width="835"
-            height="470"
+            width="2075"
+            height="1200"
             style={{
               border: 'none',
               pointerEvents: visible ? 'auto' : 'none',

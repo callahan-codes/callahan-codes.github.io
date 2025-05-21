@@ -50,10 +50,10 @@ export default function AnimateCamera({ animate }) {
         ref={controlsRef}
         enablePan={true}
         enableZoom={true}
-        minDistance={2.5}
+        minDistance={0.2}
         maxDistance={18}
         minPolarAngle={Math.PI / 2.5}              
-        maxPolarAngle={Math.PI / 1.8}
+        maxPolarAngle={Math.PI / 1.95}
     />
   );
 }
