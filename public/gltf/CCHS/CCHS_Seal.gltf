@@ -130,7 +130,7 @@
 		{
 			"mimeType":"image/png",
 			"name":"CCHS_seal_client_white-copy-01",
-			"uri":"textures/CCHS_seal_client_white-copy-01.png"
+			"uri":"https://callahan-codes.github.io/gltf/CCHS/textures/CCHS_seal_client_white-copy-01.png"
 		}
 	],
 	"accessors":[
